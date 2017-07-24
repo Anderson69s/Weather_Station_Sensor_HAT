@@ -68,7 +68,7 @@ while True :
         
     headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
     conn = httplib.HTTPConnection("api.thingspeak.com:80")
-    params = urllib.urlencode({'field1': convert_pressure,'field2': temp3,'field3': humidity,'field4': cpu_pc,'field5':cpu_temp,'field6': mem_avail_mb,'key':'WIR86RDKQQ6A4HWA'})
+    params = urllib.urlencode({'field1': convert_pressure,'field2': temp3,'field3': humidity,'field4': cpu_pc,'field5':cpu_temp,'field6': mem_avail_mb,'key':'AAAAAAAAAAAAAAAA'})
     try:
         conn.request("POST", "/update", params, headers)
         response = conn.getresponse()
